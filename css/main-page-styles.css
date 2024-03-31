@@ -225,12 +225,13 @@ body,
     color: gold;
   display: none;
   animation: slideIn 3s forwards;
-
+animation: slideOut 3s forwards;
 }
 
 /* Add styles for the content inside your div as needed */
 #vip-slide-out ul {
     padding: 20px; /* Adjust as needed */
+
 }
 
 #vip-slide-out img {
@@ -253,4 +254,17 @@ body,
     to {
         transform: translateX(0);
     }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+#vip-exit-button .fa-solid{
+    font-size: 70px;
 }

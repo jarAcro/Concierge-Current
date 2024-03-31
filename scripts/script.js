@@ -57,3 +57,11 @@ vipBtn.addEventListener('click', function() {
     vipSlideOut.style.animation = 'slideIn 3s forwards';
 });
 
+const exitBtn = document.getElementById('vip-exit-button');
+
+exitBtn.addEventListener('click', function() {
+    vipSlideOut.style.animation = 'slideOut 3s forwards';
+    setTimeout(() => {
+        vipSlideOut.style.display = 'none';
+    }, 3000);
+});
