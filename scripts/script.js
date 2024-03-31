@@ -47,3 +47,13 @@ function showSectionImage(sectionId) {
         `);
     }
 }
+
+
+const vipBtn = document.getElementById('vip-experience-btn');
+const vipSlideOut = document.getElementById('vip-slide-out'); // Replace 'vip-slide-out' with the actual id of your element
+
+vipBtn.addEventListener('click', function() {
+    vipSlideOut.style.display = 'block';
+    vipSlideOut.style.animation = 'slideIn 3s forwards';
+});
+

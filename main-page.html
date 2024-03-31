@@ -13,15 +13,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" type="text/css" href="../css/main-page-styles.css">
+   
+
 </head>
 
 <body>
-    <!-- A container to hold the content of the page -->
+   
     <div class="container-fluid">
         <section id="seating-section">
-        <!-- A link that navigates back to the index.html page -->
+      
         <a href="index.html" class="btn btn-primary back-button">Home</a>
-        <!-- Buttons that call the showSectionImage function with a specific section ID when clicked -->
+      
         <button class="button-circle button-101 bt" onclick="showSectionImage('section101')"></button>
         <button class="button-circle button-102 bt" onclick="showSectionImage('section102')"></button>
         <button class="button-circle button-103 bt" onclick="showSectionImage('section103')"></button>
@@ -36,20 +38,29 @@
         <button class="button-circle button-205 bt" onclick="showSectionImage('section-205')"></button>
         <button class="button-circle button-206 bt" onclick="showSectionImage('section-206')"></button>
     </section>
+
 <section id="vip-section">
     <video autoplay loop muted id="background-video">
         <source src="videos/vip-promo.mp4" type="video/mp4">
       </video>
       <div class="text-center">
-        <button class="btn btn-black-gold meet">Meet <br>&<br> Greet</button>
-        <button class="btn btn-black-gold">VIP <br>Experience</button>
+        <button  class="btn btn-black-gold meet">Meet <br>&<br> Greet</button>
+        <button id="vip-experience-btn" class="btn btn-black-gold">VIP <br>Experience</button>
       </div>
-
+      <div id="vip-slide-out">
+        <ul>
+            <li>Gourmet Food</li>
+            <li>Unlimited Drinks</li>
+            <li>Private Bathrooms</li>
+        </ul>
+        <img src="./images/vip-drink.jpg" alt="Photo 1">
+        <img src="./images/vip-food.jpg" alt="Photo 2">
+    </div>
 </section>
 
     </div>
    
-    <script src="../scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
     <!-- Link to the jQuery library -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Link to the Bootstrap JavaScript library -->
