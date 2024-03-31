@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Playball&display=swap');
+
+body,
+.container-fluid {
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+}
+
+#seating-section {
+    height: 100vh;
+    width: 100%;
+   background-image: url("../images/seatingmap.jpg");
+   background-size: 55%;
+   /* Adjust the width and height of the background image */
+   background-position: 45% 31%;
+   /* Adjust the position of the background image */
+   background-repeat: no-repeat;
+
+}
+
+#seating-section .back-button {
+    width: 280px;
+    height: 250px;
+    text-align: center;
+    line-height: 220px;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 15%;
+    /* Make the button more round */
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    animation: fadeIn 5s ease-in-out;
+    opacity: 80%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
+    }
+}
+
+#seating-section .back-button:hover {
+    background-color: rgb(92, 92, 249);
+    /* Change color to blue when hovered */
+    transform: scale(1.1);
+    /* Increase size when hovered */
+}
+
+#seating-section .button-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    position: absolute;
+}
+
+#seating-section .bt {
+    height: 20px;
+    width: 20px;
+    opacity: .8;
+}
+
+/* Add more classes to position each button */
+#seating-section .button-101 {
+    top: 68%;
+    left: 43%;
+
+}
+
+#seating-section .button-102 {
+    top: 68.5%;
+    left: 51.5%;
+}
+
+#seating-section .button-103 {
+    top: 53%;
+    left: 37.7%;
+}
+
+#seating-section .button-104 {
+    top: 53%;
+    left: 57%;
+}
+
+#seating-section .button-105 {
+    top: 36%;
+    left: 38.7%;
+}
+
+#seating-section .button-106 {
+    top: 37%;
+    left: 55.6%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+#seating-section .button-200 {
+    top: 85%;
+    left: 47.4%;
+}
+
+#seating-section .button-201 {
+    top: 79.7%;
+    left: 36.5%;
+}
+
+#seating-section .button-202 {
+    top: 80%;
+    left: 58%;
+}
+
+#seating-section .button-203 {
+    top: 61%;
+    left: 29%;
+}
+
+#seating-section .button-204 {
+    top: 62%;
+    left: 66%;
+}
+
+#seating-section .button-205 {
+    top: 42.4%;
+    left: 29%;
+}
+
+#seating-section .button-206 {
+    top: 42%;
+    left: 66%;
+}
+
+/*----------------------------------------------------------------------------------------*/
+#vip-section {
+    height: 100%;
+    width: 100%;
+    background-color: green;
+}
+
+#vip-section #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#vip-section .btn {
+    height: 300px;
+    width: 300px;
+    font-size: 40px;
+    padding: 14px 24px;
+    border-radius: 20px;
+    margin: 190px;
+    margin-top: 686px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Playball", "sans-serif";
+
+}
+
+#vip-section .btn-black-gold {
+    background-color: black;
+    color: gold;
+}
+
+#vip-section .btn-black-gold:hover {
+    background-color: white;
+    color: black;
+}
+
+#vip-section #text-center {
+    padding-top: 405px;
+
+}
+
+
+/* Style the scrollbar for the entire page */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #a3e4f7;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fdfafa;
+    border-radius: 6px;
+}

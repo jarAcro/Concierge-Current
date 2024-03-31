@@ -1,0 +1,57 @@
+* {
+    font-family: "Lato";
+    color: white;
+}
+
+body {
+    background-image: url('../images/IndexBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.enter-button {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-right: 100px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: none;
+    display: inline-block;
+    line-height: 200px;
+    transition: all 0.3s ease;
+    font-size: 30px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.enter-button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+    opacity: .9;
+}
+
+.rounded-square:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+p {
+    font-size: 30px;
+}
