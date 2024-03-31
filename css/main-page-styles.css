@@ -4,18 +4,18 @@ body,
 .container-fluid {
     margin: 0;
     padding: 0;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 #seating-section {
     height: 100vh;
     width: 100%;
-   background-image: url("../images/seatingmap.jpg");
-   background-size: 55%;
-   /* Adjust the width and height of the background image */
-   background-position: 45% 31%;
-   /* Adjust the position of the background image */
-   background-repeat: no-repeat;
+    background-image: url("../images/seatingmap.jpg");
+    background-size: 55%;
+    /* Adjust the width and height of the background image */
+    background-position: 45% 31%;
+    /* Adjust the position of the background image */
+    background-repeat: no-repeat;
 
 }
 
@@ -143,9 +143,10 @@ overflow-x: hidden;
 
 /*----------------------------------------------------------------------------------------*/
 #vip-section {
-    height: 100%;
+    height: 90%;
     width: 100%;
-    background-color: green;
+
+    position: relative;
 }
 
 #vip-section #background-video {
@@ -155,7 +156,7 @@ overflow-x: hidden;
     width: 100vw;
     height: 60vh;
     object-fit: cover;
-    z-index: -1;
+    z-index: 2;
 }
 
 #vip-section .btn {
