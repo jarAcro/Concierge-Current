@@ -50,18 +50,18 @@ function showSectionImage(sectionId) {
 
 
 const vipBtn = document.getElementById('vip-experience-btn');
-const vipSlideOut = document.getElementById('vip-slide-out'); // Replace 'vip-slide-out' with the actual id of your element
+const vipSlideOut = document.getElementById('vip-slide-out'); 
 
 vipBtn.addEventListener('click', function() {
     vipSlideOut.style.display = 'block';
-    vipSlideOut.style.animation = 'slideIn 3s forwards';
+    vipSlideOut.style.animation = 'slideIn 1s forwards';
 });
 
 const exitBtn = document.getElementById('vip-exit-button');
 
 exitBtn.addEventListener('click', function() {
-    vipSlideOut.style.animation = 'slideOut 3s forwards';
+    vipSlideOut.style.animation = 'slideOut 1s forwards';
     setTimeout(() => {
         vipSlideOut.style.display = 'none';
-    }, 3000);
+    }, 1000);
 });
