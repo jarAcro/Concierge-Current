@@ -235,12 +235,7 @@ body,
     animation: slideOut 3s forwards;
 }
 
-/* Add styles for the content inside your div as needed */
-#vip-slide-out ul {
-    padding: 20px;
-    /* Adjust as needed */
 
-}
 
 #vip-slide-out img {
     display: flex;
@@ -254,13 +249,16 @@ body,
     height: auto;
     padding: 10px;
     width: 50%;
-    /* Set the width to your desired value */
+  
 }
 
 
 
 #vip-exit-button .fa-solid {
     font-size: 80px;
+    color: gold;
+    background-color: black;
+
 }
 
 #exit-button-icon {
@@ -271,7 +269,7 @@ body,
     position: absolute;
     top: 0;
     right: 0;
-
+    background-color: black;
 }
 
 .vip-flex1 {
@@ -279,14 +277,16 @@ body,
     flex-direction: row;
     gap: 20px;
     justify-content: flex-end;
-    box-sizing: border-box;
+  
+    padding-top: 10%;
 }
 
 ul li {
     font-family: "Playball";
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    padding: 0;
+    padding-left: 0;
+   padding-top: 10px;
     margin: 0;
 }
 
@@ -294,19 +294,37 @@ ul li {
     max-width: 10%;
     max-height: 10%;
     border-radius: 7%;
-}
-
-.vip-food-img {
-    width: 100%;
-    max-width: 50%;
-    max-height: 50%;
+    margin: 0 auto;
 }
 
 
+#vip-slide-out p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-family: "playball";
+    padding-top: 5%;
+    font-size: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
 
+#vip-slide-out h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    font-family: "playball";
+    margin: 0;
+}
 
-
-
+.vip-h1 {
+    margin-right: 20px;
+    /* Adjust as needed */
+}
 
 
 
