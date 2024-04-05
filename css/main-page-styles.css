@@ -235,8 +235,6 @@ body,
     animation: slideOut 3s forwards;
 }
 
-
-
 #vip-slide-out img {
     display: flex;
     flex-direction: row;
@@ -251,7 +249,6 @@ body,
     width: 50%;
   
 }
-
 
 
 #vip-exit-button .fa-solid {
@@ -277,13 +274,12 @@ body,
     flex-direction: row;
     gap: 20px;
     justify-content: flex-end;
-  
     padding-top: 10%;
 }
 
 ul li {
     font-family: "Playball";
-    font-size: 25px;
+    font-size: 23px;
     text-align: center;
     padding-left: 0;
    padding-top: 10px;
@@ -307,7 +303,7 @@ ul li {
     padding: 10px;
     font-family: "playball";
     padding-top: 5%;
-    font-size: 20px;
+    font-size: 30px;
     width: 80%;
     margin: 0 auto;
 }
