@@ -230,7 +230,7 @@ body,
     overflow-y: hidden;
     /* If your content is long */
     color: gold;
-    /*display: none;*/
+    display: none;
     animation: slideIn 3s forwards;
     animation: slideOut 3s forwards;
 }
@@ -249,7 +249,6 @@ body,
     width: 50%;
   
 }
-
 
 #vip-exit-button .fa-solid {
     font-size: 80px;
