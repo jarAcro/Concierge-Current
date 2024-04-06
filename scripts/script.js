@@ -65,3 +65,20 @@ exitBtn.addEventListener('click', function() {
         vipSlideOut.style.display = 'none';
     }, 1000);
 });
+
+const meetGreetBtn = document.getElementById('meet-btn');
+const meetSlideOut = document.getElementById('meet-greet-slide-out');
+
+meetGreetBtn.addEventListener('click', function() {
+    meetSlideOut.style.display = 'block';
+    meetSlideOut.style.animation = 'slideInleft 1s forwards';
+});
+
+const meetExitBtn = document.getElementById('meet-exit-icon');
+
+meetExitBtn.addEventListener('click', function() {
+    meetSlideOut.style.animation = 'slideOutleft 1s forwards';
+    setTimeout(() => {
+        meetSlideOut.style.display = 'none';
+    }, 1000);
+});

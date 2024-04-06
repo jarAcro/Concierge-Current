@@ -200,23 +200,15 @@ body,
 /*VIP pop out---------------------------------------------------------------------------------------------------------------*/
 
 #vip-slide-out {
-    position: fixed;
-    /* Fixed or absolute depending on your needs */
+    position: fixed;   
     top: 0;
     right: 0%;
-    /* Start off-screen. Adjust if your div's width is different */
     width: 50%;
-    /* Set to desired width */
     height: 100%;
-    /* Set to desired height */
     background-color: black;
-    /* Background color */
     transition: right 0.5s ease;
-    /* Smooth transition for sliding in */
     z-index: 1050;
-    /* Ensure it's above other content */
     overflow-y: hidden;
-    /* If your content is long */
     color: gold;
     display: none;
     animation: slideIn 3s forwards;
@@ -309,6 +301,63 @@ ul li {
     /* Adjust as needed */
 }
 
+/*----------------------------------------------------------meet and greet slide out------------------------------------------------------------*/
+
+#meet-greet-slide-out {
+    position: fixed;   
+    top: 0;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    transition: right 0.5s ease;
+    z-index: 1050;
+    overflow-y: hidden;
+    color: gold;
+    display: none;
+    animation: slideIn 3s forwards;
+    animation: slideOut 3s forwards;
+}
+
+#meet-greet-slide-out .fa-solid{
+    transform: rotate(180deg);
+    font-size: 80px;
+    color: gold;
+    background-color: black;
+}
+#meet-greet-exit-button{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
@@ -352,7 +401,6 @@ ul li {
     gap: 60px;
     justify-content: center;
     align-items: center;
-
     padding-top: 10%;
 }
 
