@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Playball&display=swap');
-html{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
     scroll-behavior: smooth;
 }
+
 body,
 .container-fluid {
     margin: 0;
@@ -231,7 +235,7 @@ body,
     height: auto;
     padding: 10px;
     width: 50%;
-  
+
 }
 
 #vip-exit-button .fa-solid {
@@ -265,7 +269,7 @@ ul li {
     font-size: 23px;
     text-align: center;
     padding-left: 0;
-   padding-top: 10px;
+    padding-top: 10px;
     margin: 0;
 }
 
@@ -309,7 +313,7 @@ ul li {
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
 
-#welcome-section{
+#welcome-section {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -317,13 +321,15 @@ ul li {
    
 }
 
-.container-fluid #welcome-section h1{
+.container-fluid #welcome-section h1 {
     padding-top: 5%;
 }
-.content{
+
+.content {
     animation: appear 5s forwards;
 }
-.down-arrow{
+
+.down-arrow {
     padding-top: 14.8%;
     font-size: 60px;
     animation: bounce infinite forwards 3s;
@@ -332,38 +338,49 @@ ul li {
 .container-fluid #welcome-section p {
     font-size: 20px;
 }
-.container-fluid #welcome-section .btn{
-font-size: 30px;
-margin-top: 10px;
+
+.container-fluid #welcome-section .btn {
+    font-size: 37px;
+    margin-top: 10px;
+    font-family: "Playfair Display", "sans-serif";
+    font-style: normal;
+    font-weight: 500;
 }
-.btn-flex-container{
+
+.btn-flex-container {
     display: flex;
     gap: 60px;
     justify-content: center;
-   align-items: center;
-   
-   padding-top: 10%;
+    align-items: center;
+
+    padding-top: 10%;
 }
-.welcome-btns{
+
+.welcome-btns {
     width: 300px;
     height: 300px;
     border-radius: 5%;
-    box-shadow:0 0 60px 30px #fff;
+    box-shadow: 0 0 60px 30px #fff;
     background-color: white;
     color: #1EC0DA;
     border: none;
+
 }
-.welcome-btns:hover{
+
+.welcome-btns:hover {
     transform: scale(1.1);
     background-color: #7DABC2;
 }
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -372,6 +389,7 @@ margin-top: 10px;
 .element {
     animation: bounce 1s infinite;
 }
+
 @keyframes appear {
     0% {
         opacity: 0;
@@ -404,6 +422,7 @@ margin-top: 10px;
         transform: translateX(100%);
     }
 }
+
 @keyframes slideInleft {
     from {
         transform: translateX(-100%);
