@@ -19,27 +19,7 @@ body,
 
 }
 
-#seating-section .back-button {
-    width: 280px;
-    height: 250px;
-    text-align: center;
-    line-height: 220px;
-    font-size: 40px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: black;
-    margin-top: 30px;
-    margin-left: 30px;
-    border-radius: 15%;
-    /* Make the button more round */
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effects */
-    animation: fadeIn 5s ease-in-out;
-    opacity: 80%;
-}
+
 
 @keyframes fadeIn {
     0% {
@@ -75,69 +55,69 @@ body,
 
 /* Add more classes to position each button */
 #seating-section .button-101 {
-    top: 68%;
+    top: 168%;
     left: 43%;
 
 }
 
 #seating-section .button-102 {
-    top: 68.5%;
+    top: 168.5%;
     left: 51.5%;
 }
 
 #seating-section .button-103 {
-    top: 53%;
+    top: 153%;
     left: 37.7%;
 }
 
 #seating-section .button-104 {
-    top: 53%;
+    top: 153%;
     left: 57%;
 }
 
 #seating-section .button-105 {
-    top: 36%;
+    top: 136%;
     left: 38.7%;
 }
 
 #seating-section .button-106 {
-    top: 37%;
+    top: 137%;
     left: 55.6%;
 }
 
 /*-------------------------------------------------------------------------------------------*/
 #seating-section .button-200 {
-    top: 85%;
+    top: 184%;
     left: 47.4%;
 }
 
 #seating-section .button-201 {
-    top: 79.7%;
+    top: 179.7%;
     left: 36.5%;
 }
 
 #seating-section .button-202 {
-    top: 80%;
+    top: 180%;
     left: 58%;
 }
 
 #seating-section .button-203 {
-    top: 61%;
+    top: 161%;
     left: 29%;
 }
 
 #seating-section .button-204 {
-    top: 62%;
+    top: 162%;
     left: 66%;
 }
 
 #seating-section .button-205 {
-    top: 42.4%;
+    top: 142.4%;
     left: 29%;
 }
 
 #seating-section .button-206 {
-    top: 42%;
+    top: 142%;
     left: 66%;
 }
 
@@ -164,6 +144,7 @@ body,
     height: 60vh;
     object-fit: cover;
     z-index: 2;
+    padding-bottom: 7%;
 }
 
 #vip-section .btn {
@@ -182,6 +163,7 @@ body,
 #vip-section .btn-black-gold {
     background-color: black;
     color: gold;
+
 }
 
 #vip-section .btn-black-gold:hover {
@@ -323,6 +305,14 @@ ul li {
 
 
 
+/*----------------------------------------------------------------------------------------------------------------------------*/
+#welcome-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: green;
+}
+
 
 
 
@@ -344,5 +334,24 @@ ul li {
 
     to {
         transform: translateX(100%);
+    }
+}
+@keyframes slideInleft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutleft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }

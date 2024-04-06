@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <!-- The viewport meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no user-scalable=no">
-    <!-- The title of the document -->
+    
     <title>Seating Map</title>
     <!-- Link to the Bootstrap CSS library -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -21,10 +21,18 @@
 <body>
    
     <div class="container-fluid">
+
+        <section id="welcome-section">
+           
+                <h1>Welcome to ECHO</h1>
+                <a href="index.html" class="btn btn-primary back-button">Home</a>
+                <p>Experience the best live music in town!</p>
+                
+        </section>
+        <!-- ------------------------------------------------------------------------------------------------------------>
         <section id="seating-section">
-      
-        <a href="index.html" class="btn btn-primary back-button">Home</a>
-      
+        
+
         <button class="button-circle button-101 bt" onclick="showSectionImage('section101')"></button>
         <button class="button-circle button-102 bt" onclick="showSectionImage('section102')"></button>
         <button class="button-circle button-103 bt" onclick="showSectionImage('section103')"></button>
@@ -39,41 +47,40 @@
         <button class="button-circle button-205 bt" onclick="showSectionImage('section-205')"></button>
         <button class="button-circle button-206 bt" onclick="showSectionImage('section-206')"></button>
     </section>
-
-<section id="vip-section">
-    <video autoplay loop muted id="background-video">
-        <source src="videos/vip-promo.mp4" type="video/mp4">
-      </video>
-      <div class="text-center">
-        <button  class="btn btn-black-gold meet">Meet <br>&<br> Greet</button>
-        <button id="vip-experience-btn" class="btn btn-black-gold">VIP <br>Experience</button>
-      </div>
-
-      <div id="vip-slide-out">
-        <div id="exit-button-icon">
-        <button id="vip-exit-button"><i class="fa-solid fa-arrow-right"></i></button>
-    </div>
-    <h1><span class="vip-h1">VIP</span> <span>Experience</span></h1>
-    <p>Come live an unforgettable moment at ECHO with our VIP Experience! This elevated service will sweep you off your feet with the following inclusions:</p>
-    <div class="vip-flex1">
-        <ul>
-            <li>Photo Opportunity
-                with the Artists
-            </li>
-            <li>Open Bar</li>
-            <li>Canapes</li>
-            <li>Desserts</li>
-            <li>Private Bathrooms</li>
-            <li>VIP Suite</li>
-            <li>Complimentary Gift</li>
-            <li>Dedicated Entrance</li>
-        </ul>
-       
-        <img class="vip-drink-img" src="./images/vip-drink.jpg" alt="Photo 1">
-    </div>
-        
-    </div>
-</section>
+<!-- ------------------------------------------------------------------------------------------------------------>
+    <section id="vip-section">
+        <video autoplay loop muted id="background-video">
+            <source src="videos/vip-promo.mp4" type="video/mp4">
+          </video>
+          <div class="text-center">
+            <button  class="btn btn-black-gold meet">Meet <br>&<br> Greet</button>
+            <button id="vip-experience-btn" class="btn btn-black-gold">VIP <br>Experience</button>
+          </div>
+    <!-- ------------------------------------------------------------------------------------------------------------>
+          <div id="vip-slide-out">
+            <div id="exit-button-icon">
+            <button id="vip-exit-button"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <h1><span class="vip-h1">VIP</span> <span>Experience</span></h1>
+        <p>Come live an unforgettable moment at ECHO with our VIP Experience! This elevated service will sweep you off your feet with the following inclusions:</p>
+        <div class="vip-flex1">
+            <ul>
+                <li>Photo Opportunity
+                    with the Artists
+                </li>
+                <li>Open Bar</li>
+                <li>Canapes</li>
+                <li>Desserts</li>
+                <li>Private Bathrooms</li>
+                <li>VIP Suite</li>
+                <li>Complimentary Gift</li>
+                <li>Dedicated Entrance</li>
+            </ul>
+            <img class="vip-drink-img" src="./images/vip-drink.jpg" alt="Photo 1">
+        </div>
+            
+        </div>
+    </section>
 
     </div>
     <script src="https://kit.fontawesome.com/6fed2b754a.js" crossorigin="anonymous"></script>
