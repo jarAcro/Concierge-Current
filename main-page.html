@@ -23,17 +23,23 @@
     <div class="container-fluid">
 
         <section id="welcome-section">
-           
+            <div class="content">
+           <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
                 <h1>Welcome to ECHO</h1>
-                <a href="index.html" class="btn btn-primary back-button">Home</a>
-                <a href="#seating-section" class="btn btn-primary back-button">Seating Chart</a>
-                <a href="#vip-section" class="btn btn-primary back-button">VIP Experience</a>
-                
-                
+                <div class="btn-flex-container">
+                <a href="index.html" class="btn btn-primary welcome-btns d-flex align-items-center justify-content-center">Home</a>
+                <a href="#seating-section" class="btn btn-primary welcome-btns d-flex align-items-center justify-content-center">Seating Chart</a>
+                <a href="#vip-section" class="btn btn-primary welcome-btns d-flex align-items-center justify-content-center">VIP Experience</a>
+            </div>
+            <i class=" down-arrow fa-solid fa-angle-down"></i>
+            <p>Scroll Down</p>
+        </div>
+        </div>
         </section>
-        <!-------------------------------------------------------------------------------------------------------------->
-        <section id="seating-section">
         
+    <!-------------------------------------------------------------------------------------------------------------->
+
+        <section id="seating-section">
 
         <button class="button-circle button-101 bt" onclick="showSectionImage('section101')"></button>
         <button class="button-circle button-102 bt" onclick="showSectionImage('section102')"></button>
@@ -68,7 +74,7 @@
         <div class="vip-flex1">
             <ul>
                 <li>Photo Opportunity
-                    with the Artists
+                    with our Artists
                 </li>
                 <li>Open Bar</li>
                 <li>Canapes</li>

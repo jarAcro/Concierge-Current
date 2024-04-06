@@ -308,14 +308,80 @@ ul li {
 
 
 /*----------------------------------------------------------------------------------------------------------------------------*/
+
 #welcome-section{
     height: 100vh;
     width: 100%;
     position: relative;
-    background-color: green;
+    background-image: linear-gradient(to right top, #012f4e, #294b66, #49687f, #6b8799, #8fa7b4, #90adc2, #94b1d1, #9db5df, #a896d7, #c56eb4, #d63f76, #c82026);
+   
 }
 
+.container-fluid #welcome-section h1{
+    padding-top: 5%;
+}
+.content{
+    animation: appear 5s forwards;
+}
+.down-arrow{
+    padding-top: 14.8%;
+    font-size: 60px;
+    animation: bounce infinite forwards 3s;
+}
 
+.container-fluid #welcome-section p {
+    font-size: 20px;
+}
+.container-fluid #welcome-section .btn{
+font-size: 30px;
+margin-top: 10px;
+}
+.btn-flex-container{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+   align-items: center;
+   
+   padding-top: 10%;
+}
+.welcome-btns{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    box-shadow:0 0 60px 30px #fff;
+    background-color: white;
+    color: #1EC0DA;
+    border: none;
+}
+.welcome-btns:hover{
+    transform: scale(1.1);
+    background-color: #7DABC2;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.element {
+    animation: bounce 1s infinite;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
 
 
 
