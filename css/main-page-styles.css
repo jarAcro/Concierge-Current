@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Parisienne&family=Playball&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+:root{
+    --primary-text-color: #E2BF60;
+    
+}
+*{
+    font-family: "playfair display", "sans-serif";
+}
 html {
     scroll-behavior: smooth;
 }
@@ -166,10 +173,14 @@ body,
 
 }
 
-#vip-section .btn-black-gold {
+#vip-section #vip-experience-btn {
     background-color: black;
-    color: gold;
+    color: var(--primary-text-color);
 
+}
+#vip-section #meet-btn{
+    background-color: black;
+    color: var(--primary-text-color);
 }
 
 #vip-section .btn-black-gold:hover {
@@ -209,7 +220,7 @@ body,
     transition: right 0.5s ease;
     z-index: 1050;
     overflow-y: hidden;
-    color: gold;
+    color: var(--primary-text-color);
     display: none;
     animation: slideIn 3s forwards;
     animation: slideOut 3s forwards;
@@ -232,7 +243,7 @@ body,
 
 #vip-exit-button .fa-solid {
     font-size: 80px;
-    color: gold;
+    color: var(--primary-text-color);
     background-color: black;
 
 }
@@ -257,7 +268,7 @@ body,
 }
 
 ul li {
-    font-family: "Playball";
+   
     font-size: 23px;
     text-align: center;
     padding-left: 0;
@@ -280,7 +291,7 @@ ul li {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-family: "playball";
+    font-family: "playfiar display";
     padding-top: 5%;
     font-size: 30px;
     width: 80%;
@@ -313,7 +324,7 @@ ul li {
     transition: right 0.5s ease;
     z-index: 1050;
     overflow-y: hidden;
-    color: gold;
+    color: var(--primary-text-color);
     display: none;
     animation: slideIn 3s forwards;
     animation: slideOut 3s forwards;
@@ -322,34 +333,19 @@ ul li {
 #meet-greet-slide-out .fa-solid{
     transform: rotate(180deg);
     font-size: 80px;
-    color: gold;
+    color: var(--primary-text-color);
     background-color: black;
 }
 #meet-greet-exit-button{
     background-color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#meet-greet-slide-out p{
+    font-size: 25px;
+}
+#meet-greet-slide-out h1{
+    font-size: 50px;
+}
 
 
 
@@ -402,6 +398,7 @@ ul li {
     justify-content: center;
     align-items: center;
     padding-top: 10%;
+    flex-wrap: wrap;
 }
 
 .welcome-btns {
