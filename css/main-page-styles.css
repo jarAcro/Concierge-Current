@@ -36,15 +36,7 @@ body,
 
 
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: .8;
-    }
-}
 
 #seating-section .back-button:hover {
     background-color: rgb(92, 92, 249);
@@ -356,7 +348,9 @@ ul li {
     max-width: 40%;
     max-height: 40%;
     border-radius: 7%;
-
+    box-shadow: -5px 7px 38px -5px rgba(234,219,219,0.75);
+-webkit-box-shadow: -5px 7px 38px -5px rgba(234,219,219,0.75);
+-moz-box-shadow: -5px 7px 38px -5px rgba(234,219,219,0.75);
 }
 
 .meet-greet-flex {
@@ -379,9 +373,7 @@ ul li {
 
 
 
-
-
-/*----------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------Welcome Section-----------------------------------------------------------------------------------*/
 
 #welcome-section {
     height: 100vh;
@@ -473,8 +465,6 @@ ul li {
 
 }
 
-
-
 @keyframes slideIn {
     from {
         transform: translateX(100%);
@@ -512,5 +502,15 @@ ul li {
 
     to {
         transform: translateX(-100%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: .8;
     }
 }
