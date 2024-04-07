@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-:root{
+:root {
     --primary-text-color: #E2BF60;
-    
+
 }
-*{
+
+* {
     font-family: "playfair display", "sans-serif";
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -178,7 +180,8 @@ body,
     color: var(--primary-text-color);
 
 }
-#vip-section #meet-btn{
+
+#vip-section #meet-btn {
     background-color: black;
     color: var(--primary-text-color);
 }
@@ -208,10 +211,10 @@ body,
     border-radius: 6px;
 }
 
-/*VIP pop out---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------VIP Slide out----------------------------------------------------------------------------------*/
 
 #vip-slide-out {
-    position: fixed;   
+    position: fixed;
     top: 0;
     right: 0%;
     width: 50%;
@@ -268,7 +271,7 @@ body,
 }
 
 ul li {
-   
+
     font-size: 23px;
     text-align: center;
     padding-left: 0;
@@ -315,7 +318,7 @@ ul li {
 /*----------------------------------------------------------meet and greet slide out------------------------------------------------------------*/
 
 #meet-greet-slide-out {
-    position: fixed;   
+    position: fixed;
     top: 0;
     left: 0%;
     width: 50%;
@@ -330,26 +333,48 @@ ul li {
     animation: slideOut 3s forwards;
 }
 
-#meet-greet-slide-out .fa-solid{
+#meet-greet-slide-out .fa-solid {
     transform: rotate(180deg);
     font-size: 80px;
     color: var(--primary-text-color);
     background-color: black;
 }
-#meet-greet-exit-button{
+
+#meet-greet-exit-button {
     background-color: black;
 }
 
-#meet-greet-slide-out p{
+#meet-greet-slide-out p {
     font-size: 25px;
 }
-#meet-greet-slide-out h1{
+
+#meet-greet-slide-out h1 {
     font-size: 50px;
 }
 
+.meet-greet-img {
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 7%;
 
+}
 
+.meet-greet-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
 
+.meet-greet-img-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
 
 
 
@@ -363,7 +388,7 @@ ul li {
     width: 100%;
     position: relative;
     background-image: linear-gradient(to right top, #012f4e, #294b66, #49687f, #6b8799, #8fa7b4, #90adc2, #94b1d1, #9db5df, #a896d7, #c56eb4, #d63f76, #c82026);
-   
+
 }
 
 .container-fluid #welcome-section h1 {
@@ -417,6 +442,8 @@ ul li {
     background-color: #7DABC2;
 }
 
+
+/*-------------------------------animations------------------------------------------------------------------*/
 @keyframes bounce {
     0% {
         transform: translateY(0);
