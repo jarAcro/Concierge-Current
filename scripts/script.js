@@ -82,3 +82,20 @@ meetExitBtn.addEventListener('click', function() {
         meetSlideOut.style.display = 'none';
     }, 1000);
 });
+
+window.onscroll = function() {
+    var scrollHeight = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
+    var scrollPosition = window.pageYOffset + window.innerHeight;
+    var bottomReached = (scrollHeight - scrollPosition) <= 1;
+
+    var topOfPageDiv = document.getElementById('top-of-page-div');
+    if (bottomReached) {
+        topOfPageDiv.style.opacity = '1';
+    } else {
+        topOfPageDiv.style.opacity = '0';
+    }
+};

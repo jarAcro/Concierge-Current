@@ -253,7 +253,27 @@ transform: scale(1.1);
 
 }
 
-
+.back-to-top{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-42%);
+    font-size: 30px;
+    color: white;
+    margin: 0 auto;
+}
+#top-of-page-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+#top-of-page-div i{
+    margin-bottom:25px;
+    animation: bounce 2s infinite;
+}
 
 /*---------------------------------------VIP Slide out----------------------------------------------------------------------------------*/
 
